@@ -30,7 +30,7 @@ def cache_control_no_cache():
 
 
 @app.route('/no-store')
-def cache_control_no_cache():
+def cache_control_no_store():
     resp = Response()
     resp.headers['Location'] = 'https://www.google.co.jp/'
     resp.headers['Cache-Control'] = 'no-store'
